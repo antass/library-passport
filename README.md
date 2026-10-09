@@ -20,6 +20,12 @@ It's a single HTML file with no build step, designed to be added to an iPhone Ho
   - **As a claude.ai Artifact:** they're stored in the artifact's shared database and sync across devices.
   - **Opened anywhere else (local file, GitHub Pages):** they're saved in that browser's `localStorage`, on that device only.
 
+## Files
+
+- `library-passport.html`: the source. This is the file published as the claude.ai Artifact, so make your edits here.
+- `index.html`: the standalone page that GitHub Pages serves. It's generated, so don't edit it by hand. After changing the source, run `python3 build_index.py` to regenerate it.
+
 ## Running it
 
-Open `library-passport.html` in a browser. On iPhone, open it in Safari, then tap Share → Add to Home Screen.
+- **GitHub Pages:** GitHub Pages serves it from `main`. On iPhone, open the Pages URL in Safari, then tap Share → Add to Home Screen.
+- **Locally:** open `index.html` in a browser.
